@@ -28,7 +28,7 @@ with(selectdf, plot(Time, as.numeric(Sub_metering_1), type = "n", ylab = "Energy
 with(selectdf, lines(Time, as.numeric(Sub_metering_1)))
 with(selectdf, lines(Time, as.numeric(Sub_metering_2), col = "red"))
 with(selectdf, lines(Time, as.numeric(Sub_metering_3), col ="blue"))
-legend("topright", col = c("black", "red", "blue"), legend = c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"), lty=1)
+legend("topright", col = c("black", "red", "blue"), legend = c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"), lty=1:1, bty ="n")
 
 ## Lower right
 with(selectdf, plot(Time, as.numeric(Global_reactive_power), type = "n", ylab = "Global_reactive_power", xlab = "datetime"))
